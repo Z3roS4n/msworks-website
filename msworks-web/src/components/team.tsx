@@ -42,9 +42,9 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center place-content-center gap-x-8 gap-y-12">
+      <div className="w-full flex flex-col lg:flex-row justify-center gap-x-8 gap-y-12">
         {teamMembers.map((member) => (
-          <div key={member.name}>
+          <div key={member.name} className="w-1/4 not-lg:w-full">
             <Image
               src={member.imageUrl}
               alt={member.name}
