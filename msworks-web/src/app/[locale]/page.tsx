@@ -1,10 +1,10 @@
-import Contact from '@/components/contact';
-import FAQ from '@/components/faq';
-import Features from '@/components/features';
+import Contact from '@/components/home/contact';
+import FAQ from '@/components/home/faq';
+import Features from '@/components/home/features';
 import Hero from '@/components/home/hero';
-import LogoCloud from '@/components/logo-cloud';
-import Team from '@/components/team';
-import Testimonials from '@/components/testimonials';
+import LogoCloud from '@/components/home/logo-cloud';
+import Team from '@/components/home/team';
+import Testimonials from '@/components/home/testimonials';
 export default function LocalePage() {
   return (
     <main>

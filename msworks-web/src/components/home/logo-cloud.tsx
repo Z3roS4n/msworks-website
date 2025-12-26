@@ -7,7 +7,7 @@ import {
   Logo06,
   Logo07,
   Logo08,
-} from "@/components/logos";
+} from "@/components/home/logos";
 import { Marquee } from "@/components/ui/marquee";
 
 const LogoCloud = () => {

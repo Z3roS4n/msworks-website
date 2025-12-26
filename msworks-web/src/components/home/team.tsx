@@ -5,16 +5,23 @@ import Link from "next/link";
 
 const teamMembers = [
   {
-    name: "John Doe",
+    name: "Antonio Murabito",
     title: "Founder & CEO",
-    bio: "Former co-founder of Opendoor. Early staff at Spotify and Clearbit.",
+    bio: "Antonio è il fondatore e CEO, Lead Developer di MSWorks. Con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
     imageUrl:
       "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
   {
-    name: "Jane Doe",
-    title: "Engineering Manager",
-    bio: "Lead engineering teams at Figma, Pitch, and Protocol Labs.",
+    name: "Gabriele Iannazzo",
+    title: "Developer & Security Expert",
+    bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
+    imageUrl:
+      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+  },
+  {
+    name: "Cesare Tinaglia",
+    title: "Communication Expert",
+    bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. La sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
     imageUrl:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
   },
