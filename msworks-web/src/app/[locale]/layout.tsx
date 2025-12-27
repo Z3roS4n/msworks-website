@@ -3,6 +3,7 @@ import {hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import Navbar from '@/components/global/navbar/navbar';
+import Footer from '@/components/global/footer';
  
 type Props = {
   children: React.ReactNode;
@@ -24,6 +25,7 @@ export default async function LocaleLayout({children, params}: Props) {
         <Navbar></Navbar>
       </div>
       {children}
+      <Footer></Footer>
     </>
   );
 }

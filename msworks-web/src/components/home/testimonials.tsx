@@ -3,39 +3,39 @@ import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 const testimonials = [
   {
     id: 1,
-    name: "John Doe",
-    designation: "Software Engineer",
-    company: "TechCorp",
+    name: "Marco Briguglio",
+    designation: "Mental Coach",
+    company: "Marco Briguglio Coaching",
     testimonial:
-      "This product has completely transformed the way we work. The efficiency and ease of use are unmatched!",
+      "Un servizio eccezionale che ha trasformato il modo in cui genero nuovi leads. ",
     avatar: "https://randomuser.me/api/portraits/men/1.jpg",
   },
   {
     id: 2,
-    name: "Sophia Lee",
-    designation: "Data Analyst",
-    company: "InsightTech",
+    name: "Claudia",
+    designation: "Administrative",
+    company: "Senes Cooperativa Sociale",
     testimonial:
-      "This tool has saved me hours of work! The analytics and reporting features are incredibly powerful.",
+      "Sito web professionale e facile da navigare. I clienti apprezzano molto la chiarezza delle informazioni.",
     avatar: "https://randomuser.me/api/portraits/women/6.jpg",
   },
   {
     id: 3,
-    name: "Michael Johnson",
-    designation: "UX Designer",
-    company: "DesignPro",
+    name: "Fabio Greco",
+    designation: "Founder",
+    company: "META Gaming Pub",
     testimonial:
-      "An amazing tool that simplifies complex tasks. Highly recommended for professionals in the industry. " +
-      "The intuitive interface makes it easy to onboard new team members, and the automation features save us countless hours every week. ",
+      "Uno strumento straordinario che ha migliorato l'esperienza di gestione degli ordini dentro il locale " +
+      "L'interfaccia intuitiva rende facile l'inserimento di nuovi ordini e il monitoraggio dei tavoli.",
     avatar: "https://randomuser.me/api/portraits/men/3.jpg",
   },
   {
     id: 4,
-    name: "Emily Davis",
-    designation: "Marketing Specialist",
-    company: "BrandBoost",
+    name: "Riccardo",
+    designation: "CEO",
+    company: "HairSnapper",
     testimonial:
-      "I've seen a significant improvement in our team's productivity since we started using this service.",
+      "Servizio eccezionale! Le campagne pubblicitarie create hanno portato a un aumento significativo delle vendite. ",
     avatar: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
@@ -62,10 +62,10 @@ const Testimonials = () => (
   <div className="min-h-screen flex justify-center items-center py-12 px-6">
     <div>
       <h2 className="text-5xl font-semibold text-center tracking-[-0.03em]">
-        What Our Customers Say
+        Cosa dicono di noi i clienti
       </h2>
       <p className="mt-3 text-xl text-center text-muted-foreground">
-        Discover what our valued customers think about our innovative products
+        Scopri come abbiamo aiutato le aziende e i privati a crescere e prosperare nel mondo digitale.
       </p>
       <div className="mt-14 max-w-(--breakpoint-xl) mx-auto columns-1 md:columns-2 lg:columns-3 gap-8">
         {testimonials.map((testimonial) => (

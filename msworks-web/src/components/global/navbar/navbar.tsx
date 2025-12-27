@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { NavigationSheet } from "@/components/global/navbar/navigation-sheet";
-import { Logo } from "@/components/global/navbar/logo"; 
+import { Logo } from "@/components/global/logo"; 
 import { NavMenu } from "@/components/global/navbar/nav-menu";
 
 const Navbar = () => {

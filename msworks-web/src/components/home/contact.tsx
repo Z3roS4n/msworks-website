@@ -5,67 +5,49 @@ const Contact = () => (
   <div className="min-h-screen flex items-center justify-center pt-12 md:pt-16 pb-16">
     <div className="w-full max-w-(--breakpoint-xl) mx-auto px-6 xl:px-0">
         <h2 className="text-4xl md:text-[2.75rem] md:leading-[1.2] font-semibold tracking-[-0.03em] sm:max-w-xl text-pretty sm:mx-auto sm:text-center">
-          Get in Touch with Us
+          Teniamoci in contatto
         </h2>
         <p className="mt-2 text-muted-foreground text-lg sm:text-xl sm:text-center">
-          We&apos;d love to hear from you! Whether you have questions, feedback, or
-          just want to say hello, our team is here to assist you. Reach out to us
-          through any of the following methods:
+          Siamo qui per rispondere a qualsiasi domanda tu possa avere. Che tu stia cercando di iniziare un nuovo progetto o semplicemente voglia saperne di più sui nostri servizi, non esitare a contattarci.
         </p>
-      <div className="mt-14 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <div className="border border-dashed bg-muted/40 p-6 pb-8 rounded-xl">
+      <div className="mt-14 flex lg:flex-row flex-col justify-center gap-8">
+        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <MailIcon />
           </div>
           <h3 className="mt-8 font-bold text-xl">Email</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Our friendly team is here to help.
+            Rispondiamo entro 24 ore.
           </p>
           <Link
             className="font-medium"
-            href="mailto:akashmoradiya3444@gmail.com"
+            href="mailto:business@murabito.eu"
           >
-            akashmoradiya3444@gmail.com
+            business@murabito.eu
           </Link>
         </div>
-        <div className="border border-dashed bg-muted/40 p-6 pb-8 rounded-xl">
+        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <MessageCircle />
           </div>
-          <h3 className="mt-8 font-bold text-xl">Live chat</h3>
+          <h3 className="mt-8 font-bold text-xl">WhatsApp</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Our friendly team is here to help.
+            Chatta con noi per una risposta rapida.
           </p>
-          <Link className="font-medium" href="#">
-            Start new chat
+          <Link className="font-medium" href="https://wa.me/+393758509144" target="_blank">
+            Inizia una nuova chat
           </Link>
         </div>
-        <div className="border border-dashed bg-muted/40 p-6 pb-8 rounded-xl">
-          <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
-            <MapPinIcon />
-          </div>
-          <h3 className="mt-8 font-bold text-xl">Office</h3>
-          <p className="mt-2.5 mb-4 text-muted-foreground">
-            Come say hello at our office HQ.
-          </p>
-          <Link
-            className="font-medium"
-            href="https://map.google.com"
-            target="_blank"
-          >
-            100 Smith Street Collingwood <br /> VIC 3066 AU
-          </Link>
-        </div>
-        <div className="border border-dashed bg-muted/40 p-6 pb-8 rounded-xl">
+        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <PhoneIcon />
           </div>
           <h3 className="mt-8 font-bold text-xl">Phone</h3>
           <p className="mt-2.5 mb-4 text-muted-foreground">
-            Mon-Fri from 8am to 5pm.
+            Dal lunedì al venerdì, 10:00 - 19:00.
           </p>
-          <Link className="font-medium" href="tel:akashmoradiya3444@gmail.com">
-            +1 (555) 000-0000
+          <Link className="font-medium" href="tel:+393758509144">
+            +39 375 850 9144
           </Link>
         </div>
       </div>

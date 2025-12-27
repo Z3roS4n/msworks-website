@@ -1,8 +1,8 @@
 import Contact from '@/components/home/contact';
+import CTA from '@/components/home/cta';
 import FAQ from '@/components/home/faq';
 import Features from '@/components/home/features';
 import Hero from '@/components/home/hero';
-import LogoCloud from '@/components/home/logo-cloud';
 import Team from '@/components/home/team';
 import Testimonials from '@/components/home/testimonials';
 export default function LocalePage() {
@@ -10,9 +10,10 @@ export default function LocalePage() {
     <main>
       <Hero></Hero>
       <Features></Features>
+      <CTA></CTA>
       <Testimonials></Testimonials>
-      <Contact></Contact>
       <Team></Team>
+      <Contact></Contact>
       <FAQ></FAQ>
     </main>
   );

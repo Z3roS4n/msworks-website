@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { DribbbleIcon, TwitchIcon, TwitterIcon } from "lucide-react";
+import { InstagramIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +10,12 @@ const teamMembers = [
     bio: "Antonio è il fondatore e CEO, Lead Developer di MSWorks. Con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
     imageUrl:
       "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600",
+    socials: [
+      {
+        url: "https://instagram.com/_antonio.jar",
+        icon: <InstagramIcon></InstagramIcon>
+      },
+    ],
   },
   {
     name: "Gabriele Iannazzo",
@@ -17,6 +23,12 @@ const teamMembers = [
     bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
     imageUrl:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+    socials: [
+      {
+        url: "https://instagram.com/i4nni",
+        icon: <InstagramIcon></InstagramIcon>
+      },
+    ],
   },
   {
     name: "Cesare Tinaglia",
@@ -24,6 +36,12 @@ const teamMembers = [
     bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. La sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
     imageUrl:
       "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+    socials: [
+      {
+        url: "https://instagram.com/cesaretinaglia",
+        icon: <InstagramIcon></InstagramIcon>
+      },
+    ],
   },
 ];
 
@@ -32,19 +50,18 @@ const Team = () => {
     <div className="flex flex-col justify-center py-8 sm:py-12 px-6 lg:px-8 max-w-(--breakpoint-xl) mx-auto gap-16">
       <div className="text-center max-w-2xl mx-auto">
         <b className="text-center text-muted-foreground text-sm font-semibold uppercase">
-          We&apos;re hiring!
+          Persone straordinarie creano esperienze straordinarie
         </b>
         <h2 className="mt-3 text-4xl sm:text-5xl font-semibold tracking-tighter">
-          Meet Our Team
+          Incontra il nostro team
         </h2>
         <p className="mt-6 text-base sm:text-lg text-muted-foreground">
-          Our philosophy is simple — hire a team of diverse, passionate people
-          and foster a culture that empowers you to do you best work.
+          La nostra filosofia è semplice: essere un team di persone diverse e appassionate che lavorano insieme per creare soluzioni digitali eccezionali.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-center gap-3">
-          <Button size="lg">Open Positions</Button>
-          <Button size="lg" variant="outline">
-            About Us
+          {/*<Button size="lg">Contattaci</Button>*/}
+          <Button size="lg" variant="default" className="rounded-full">
+            Chi Siamo
           </Button>
         </div>
       </div>
@@ -63,33 +80,18 @@ const Team = () => {
             <p className="text-muted-foreground text-sm">{member.title}</p>
             <p className="mt-3">{member.bio}</p>
             <div className="mt-4 flex items-center gap-2.5">
-              <Button
-                className="bg-accent hover:bg-accent text-muted-foreground shadow-none"
-                size="icon"
-                asChild
-              >
-                <Link href="#" target="_blank">
-                  <TwitterIcon className="stroke-muted-foreground" />
-                </Link>
-              </Button>
-              <Button
-                className="bg-muted hover:bg-muted text-muted-foreground shadow-none"
-                size="icon"
-                asChild
-              >
-                <Link href="#" target="_blank">
-                  <DribbbleIcon className="stroke-muted-foreground" />
-                </Link>
-              </Button>
-              <Button
-                className="bg-muted hover:bg-muted text-muted-foreground shadow-none"
-                size="icon"
-                asChild
-              >
-                <Link href="#" target="_blank">
-                  <TwitchIcon className="stroke-muted-foreground" />
-                </Link>
-              </Button>
+              { member.socials.length > 0 ? member.socials.map((social, index) => (
+                  <Button                 
+                    className="bg-accent hover:bg-accent text-muted-foreground shadow-none"
+                    size="icon"
+                    asChild key={index}
+                  >
+                    <Link href={social.url} target="_blank">
+                      {social.icon}
+                    </Link>
+                  </Button>
+                )) : <></>
+              }
             </div>
           </div>
         ))}
