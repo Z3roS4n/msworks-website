@@ -1,0 +1,7 @@
+export default function DevelopmentPortfolioPage() {
+  return (
+    <main>
+      <h1>Development Portfolio Page</h1>
+    </main>
+  );
+}

@@ -72,8 +72,8 @@ const Footer = () => {
             {/* Copyright */}
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
-              <Link href="/" target="_blank">
-                Shadcn UI Blocks
+              <Link href="https://msworks.it" target="_blank">
+                M&apos;s Works
               </Link>
               . All rights reserved.
             </span>

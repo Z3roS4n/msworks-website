@@ -1,8 +1,8 @@
 import {
   BadgeDollarSign,
+  Network,
   Route,
   ShieldCheck,
-  Truck,
   Undo2,
   UserRoundCheck,
 } from "lucide-react";
@@ -10,39 +10,38 @@ import {
 const faq = [
   {
     icon: Undo2,
-    question: "What is your return policy?",
-    answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+    question: "Qual è la vostra politica di reso?",
+    answer: "I servizi digitali non sono rimborsabili una volta consegnati. Tuttavia, se non sei soddisfatto del risultato finale, contatta il nostro team di supporto entro 14 giorni per discutere le opzioni disponibili.",
   },
   {
     icon: Route,
-    question: "How do I track my order?",
+    question: "Che tempo ci vuole per la consegna del progetto?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "Il tempo di consegna del progetto varia in base alla complessità e alle specifiche richieste. Ti forniremo una stima dettagliata durante la fase di preventivo.",
   },
   {
-    icon: Truck,
-    question: "Do you ship internationally?",
+    icon: Network,
+    question: "Che tecnologie utilizzate per lo sviluppo web?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "Utilizziamo una vasta gamma di tecnologie moderne come React, Next.js, Node.js, e altre per garantire soluzioni web performanti e scalabili.",
   },
   {
     icon: BadgeDollarSign,
-    question: "What payment methods do you accept?",
+    question: "Quali sono le modalità di pagamento?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "Accettiamo solamente pagamenti tramite bonifico bancario, PayPal e carte di credito. I dettagli del pagamento saranno forniti nella fattura.",
   },
   {
     icon: ShieldCheck,
-    question: "What if I receive a damaged item?",
+    question: "Come proteggete i dati dei clienti?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "Adottiamo rigorose misure di sicurezza per proteggere i dati dei nostri clienti, inclusa la crittografia, l'accesso limitato e la conformità alle normative sulla privacy.",
   },
   {
     icon: UserRoundCheck,
-    question: "How can I contact customer support?",
+    question: "Dove posso ottenere assistenza per ulteriori domande?",
     answer:
-      "Reach out via email at support@example.com or call us at 1-800-123-4567 for assistance with any inquiries.",
+      "Contattaci via email all'indirizzo business@murabito.eu o chiamaci al numero +39 375 850 9144 per assistenza su qualsiasi richiesta (anche su WhatsApp).",
   },
 ];
 
@@ -51,10 +50,10 @@ const FAQ = () => {
     <div className="min-h-screen flex items-center justify-center px-6 py-12">
       <div className="max-w-(--breakpoint-lg)">
         <h2 className="text-4xl md:text-5xl leading-[1.15]! font-semibold tracking-[-0.035em] text-center">
-          Frequently Asked Questions
+          Domande Frequenti
         </h2>
         <p className="mt-3 text-xl text-center text-muted-foreground">
-          Quick answers to common questions about our products and services.
+          Trova le risposte alle domande più comuni sui nostri servizi e processi.
         </p>
 
         <div className="mt-12 grid md:grid-cols-2 rounded-xl gap-4">

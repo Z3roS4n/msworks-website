@@ -21,7 +21,7 @@ export default async function LocaleLayout({children, params}: Props) {
  
   return (
     <>
-      <div className='mb-15'>
+      <div className='mb-20'>
         <Navbar></Navbar>
       </div>
       {children}

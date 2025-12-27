@@ -11,7 +11,7 @@ const Contact = () => (
           Siamo qui per rispondere a qualsiasi domanda tu possa avere. Che tu stia cercando di iniziare un nuovo progetto o semplicemente voglia saperne di più sui nostri servizi, non esitare a contattarci.
         </p>
       <div className="mt-14 flex lg:flex-row flex-col justify-center gap-8">
-        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
+        <div className="border border-dashed w-full lg:w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <MailIcon />
           </div>
@@ -26,7 +26,7 @@ const Contact = () => (
             business@murabito.eu
           </Link>
         </div>
-        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
+        <div className="border border-dashed w-full lg:w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <MessageCircle />
           </div>
@@ -38,7 +38,7 @@ const Contact = () => (
             Inizia una nuova chat
           </Link>
         </div>
-        <div className="border border-dashed w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
+        <div className="border border-dashed w-full lg:w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
             <PhoneIcon />
           </div>
