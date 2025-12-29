@@ -3,7 +3,9 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import {
   DribbbleIcon,
+  Github,
   GithubIcon,
+  InstagramIcon,
   TwitchIcon,
   TwitterIcon,
 } from "lucide-react";
@@ -11,10 +13,6 @@ import Link from "next/link";
 import { Logo } from "./logo";
 
 const footerLinks = [
-  {
-    title: "Overview",
-    href: "#",
-  },
   {
     title: "Features",
     href: "#",
@@ -58,14 +56,14 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Subscribe Newsletter */}
+            {/* Subscribe Newsletter
             <div className="max-w-xs w-full">
               <h6 className="font-medium">Stay up to date</h6>
               <form className="mt-6 flex items-center gap-2">
                 <Input className="rounded-full" type="email" placeholder="Enter your email" />
                 <Button className="rounded-full">Subscribe</Button>
               </form>
-            </div>
+            </div> */}
           </div>
           <Separator />
           <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
@@ -80,16 +78,10 @@ const Footer = () => {
 
             <div className="flex items-center gap-5 text-muted-foreground">
               <Link href="#" target="_blank">
-                <TwitterIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
-                <DribbbleIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
-                <TwitchIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
                 <GithubIcon className="h-5 w-5" />
+              </Link>
+              <Link href="#" target="_blank">
+                <InstagramIcon className="h-5 w-5" />
               </Link>
             </div>
           </div>

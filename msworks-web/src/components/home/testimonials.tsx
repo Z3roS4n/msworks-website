@@ -8,16 +8,16 @@ const testimonials = [
     company: "Marco Briguglio Coaching",
     testimonial:
       "Un servizio eccezionale che ha trasformato il modo in cui genero nuovi leads. ",
-    avatar: "https://randomuser.me/api/portraits/men/1.jpg",
+    avatar: "",
   },
   {
     id: 2,
-    name: "Claudia",
+    name: "Claudia Ribaudo",
     designation: "Administrative",
     company: "Senes Cooperativa Sociale",
     testimonial:
       "Sito web professionale e facile da navigare. I clienti apprezzano molto la chiarezza delle informazioni.",
-    avatar: "https://randomuser.me/api/portraits/women/6.jpg",
+    avatar: "",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const testimonials = [
     testimonial:
       "Uno strumento straordinario che ha migliorato l'esperienza di gestione degli ordini dentro il locale " +
       "L'interfaccia intuitiva rende facile l'inserimento di nuovi ordini e il monitoraggio dei tavoli.",
-    avatar: "https://randomuser.me/api/portraits/men/3.jpg",
+    avatar: "",
   },
   {
     id: 4,
@@ -36,30 +36,13 @@ const testimonials = [
     company: "HairSnapper",
     testimonial:
       "Servizio eccezionale! Le campagne pubblicitarie create hanno portato a un aumento significativo delle vendite. ",
-    avatar: "https://randomuser.me/api/portraits/women/4.jpg",
+    avatar: "",
   },
-  {
-    id: 5,
-    name: "Daniel Martinez",
-    designation: "Full-Stack Developer",
-    company: "CodeCrafters",
-    testimonial:
-      "The best investment we've made! The support team is also super responsive and helpful.",
-    avatar: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    id: 6,
-    name: "Jane Smith",
-    designation: "Product Manager",
-    company: "InnovateX",
-    testimonial:
-      "The user experience is top-notch! The interface is clean, intuitive, and easy to navigate.",
-    avatar: "https://randomuser.me/api/portraits/women/2.jpg",
-  },
+
 ];
 
 const Testimonials = () => (
-  <div className="min-h-screen flex justify-center items-center py-12 px-6">
+  <div id="testimonials" className="min-h-screen flex justify-center items-center py-12 px-6">
     <div>
       <h2 className="text-5xl font-semibold text-center tracking-[-0.03em]">
         Cosa dicono di noi i clienti

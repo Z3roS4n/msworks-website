@@ -9,7 +9,7 @@ const teamMembers = [
     title: "Founder & CEO",
     bio: "Antonio è il fondatore e CEO, Lead Developer di MSWorks. Con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
     imageUrl:
-      "https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "/antonio.png",
     socials: [
       {
         url: "https://instagram.com/_antonio.jar",
@@ -22,7 +22,7 @@ const teamMembers = [
     title: "Developer & Security Expert",
     bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
     imageUrl:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "/ianni.png",
     socials: [
       {
         url: "https://instagram.com/i4nni",
@@ -35,7 +35,7 @@ const teamMembers = [
     title: "Communication Expert",
     bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. La sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
     imageUrl:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "/cesare.png",
     socials: [
       {
         url: "https://instagram.com/cesaretinaglia",
@@ -47,7 +47,7 @@ const teamMembers = [
 
 const Team = () => {
   return (
-    <div className="flex flex-col justify-center py-8 sm:py-12 px-6 lg:px-8 max-w-(--breakpoint-xl) mx-auto gap-16">
+    <div id="team" className="flex flex-col justify-center py-8 sm:py-12 px-6 lg:px-8 max-w-(--breakpoint-xl) mx-auto gap-16">
       <div className="text-center max-w-2xl mx-auto">
         <b className="text-center text-muted-foreground text-sm font-semibold uppercase">
           Persone straordinarie creano esperienze straordinarie
@@ -59,10 +59,10 @@ const Team = () => {
           La nostra filosofia è semplice: essere un team di persone diverse e appassionate che lavorano insieme per creare soluzioni digitali eccezionali.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-center gap-3">
-          {/*<Button size="lg">Contattaci</Button>*/}
-          <Button size="lg" variant="default" className="rounded-full">
+          <Button size="lg" className="rounded-full">Prendiamoci un caffè insieme!</Button>
+          {/*<Button size="lg" variant="default" className="rounded-full">
             Chi Siamo
-          </Button>
+          </Button>*/}
         </div>
       </div>
 
