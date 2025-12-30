@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const features = [
   {
@@ -8,12 +9,14 @@ const features = [
     title: "Siti web moderni e reattivi",
     details: "Costruisci siti web moderni e reattivi che catturano l'attenzione del tuo pubblico. Utilizziamo le ultime tecnologie per garantire prestazioni ottimali e un'esperienza utente eccezionale.",
     tutorialLink: "#contact",
+    image: "/feature-1.png",
   },
   {
     category: "Graphic Design",
     title: "Design visivi sorprendenti",
     details: "Crea design grafici accattivanti e professionali che comunicano efficacemente il tuo messaggio. Utilizziamo strumenti avanzati per garantire risultati di alta qualità.",
     tutorialLink: "#contact",
+    image: "/feature-2.png",
   },
   {
     category: "Ads Management",
@@ -21,6 +24,7 @@ const features = [
     details:
       "Massimizza il rendimento delle tue campagne pubblicitarie con strategie di gestione degli annunci mirate. Analizziamo i dati per ottimizzare le performance e aumentare il ROI.",
     tutorialLink: "#contact",
+    image: "/feature-3.png",
   },
   {
     category: "GDPR Compliance",
@@ -28,12 +32,14 @@ const features = [
     details:
       "Proteggi i dati dei tuoi utenti e rispetta le normative GDPR. Implementa le migliori pratiche per la gestione dei dati e la privacy per costruire fiducia con il tuo pubblico.",
     tutorialLink: "#contact",
+    image: "/feature-5.png",
   },
   {
     category: "SEO/GEO Optimization",
     title: "Migliora il posizionamento sui motori di ricerca",
     details: "Migliora la visibilità del tuo sito web sui motori di ricerca con tecniche SEO e GEO avanzate. Ottimizza i contenuti e la struttura del sito per attirare più traffico organico.",
     tutorialLink: "#contact",
+    image: "/feature-6.png",
   },
 ];
 
@@ -53,7 +59,11 @@ const Features = () => {
               key={feature.category}
               className="flex flex-col md:flex-row items-center gap-x-12 gap-y-6 md:even:flex-row-reverse"
             >
-              <div className="w-full aspect-4/3 bg-muted rounded-xl border border-border/50 basis-1/2" />
+              <Image src={feature.image ?? "/default-image.png"} 
+                width={200} height={750} 
+                alt={feature.title} 
+                className="w-full aspect-3/2 bg-muted rounded-xl border border-border/50 basis-1/2" 
+              />
               <div className="basis-1/2 shrink-0">
                 <span className="uppercase font-medium text-sm text-muted-foreground">
                   {feature.category}
