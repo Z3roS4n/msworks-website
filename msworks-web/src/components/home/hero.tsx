@@ -17,7 +17,7 @@ export default function Hero() {
             Nuovi progetti in Portfolio <ArrowUpRight className="ml-1 size-4" />
           </Link>
         </Badge>*/}
-        <h1 className="mt-6 text-4xl --font-montserrat sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
+        <h1 className="mt-6 text-5xl --font-montserrat sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
           La tua <span className="font-bold">idea</span> è il nostro prossimo <span className=" font-bold">capolavoro</span>.
         </h1>
         <p className="mt-6 md:text-lg text-foreground/80">
