@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-6 inset-x-4 h-16 bg-background border max-w-(--breakpoint-xl) mx-auto rounded-full z-100">
+    <nav className="fixed top-6 inset-x-4 h-16 bg-background border max-w-(--breakpoint-xl) mx-auto rounded-full z-20">
       <div className="h-full flex items-center justify-between mx-auto px-4">
         <Logo />
 
@@ -25,7 +25,7 @@ const Navbar = () => {
           <Button className="rounded-full" asChild><Link href="/#contact">Iniziamo!</Link></Button>
 
           {/* Mobile Menu */}
-          <div className="md:hidden">
+          <div className="md:hidden z-120">
             <NavigationSheet />
           </div>
         </div>

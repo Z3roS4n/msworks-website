@@ -8,7 +8,7 @@ import {
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { Menu } from "lucide-react";
 import { Logo } from "@/components/global/logo";
-import { NavMenu } from "@/components//global/navbar/nav-menu";
+import { NavMenu } from "@/components/global/navbar/nav-menu";
 
 export const NavigationSheet = () => {
   return (
