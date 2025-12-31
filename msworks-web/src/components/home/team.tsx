@@ -1,13 +1,14 @@
 import { Button } from "@/components/ui/button";
-import { InstagramIcon } from "lucide-react";
+import { url } from "inspector";
+import { GithubIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 const teamMembers = [
   {
     name: "Antonio Murabito",
-    title: "Founder & CEO",
-    bio: "Antonio è il fondatore e CEO, Lead Developer di MSWorks. Con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
+    title: "Founder & Web Developer",
+    bio: "Antonio è il fondatore e CEO, Lead Developer di M's Works. Fiero palermitano, perito tecnico e studente di Ingegneria con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
     imageUrl:
       "/antonio.png",
     socials: [
@@ -15,12 +16,20 @@ const teamMembers = [
         url: "https://instagram.com/_antonio.jar",
         icon: <InstagramIcon></InstagramIcon>
       },
+      {
+        url: "https://linkedin.com/in/z3ros4n",
+        icon: <LinkedinIcon></LinkedinIcon>
+      },
+      {
+        url: "https://github.com/Z3roS4n",
+        icon: <GithubIcon></GithubIcon>
+      }
     ],
   },
   {
     name: "Gabriele Iannazzo",
     title: "Developer & Security Expert",
-    bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
+    bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Anche lui di Palermo, attualmente studente di Informatica con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
     imageUrl:
       "/ianni.png",
     socials: [
@@ -28,12 +37,16 @@ const teamMembers = [
         url: "https://instagram.com/i4nni",
         icon: <InstagramIcon></InstagramIcon>
       },
+      {
+        url: "https://github.com/anacletoTM",
+        icon: <GithubIcon></GithubIcon>
+      }
     ],
   },
   {
     name: "Cesare Tinaglia",
     title: "Communication Expert",
-    bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. La sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
+    bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. Anche lui di Palermo, attualmente studente di Comunicazione, la sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
     imageUrl:
       "/cesare.png",
     socials: [
@@ -59,7 +72,9 @@ const Team = () => {
           La nostra filosofia è semplice: essere un team di persone diverse e appassionate che lavorano insieme per creare soluzioni digitali eccezionali.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-center gap-3">
-          <Button size="lg" className="rounded-full">Prendiamoci un caffè insieme!</Button>
+          <Button size="lg" className="rounded-full" asChild>
+            <Link href="#contact">Prendiamoci un caffè insieme!</Link>
+          </Button>
           {/*<Button size="lg" variant="default" className="rounded-full">
             Chi Siamo
           </Button>*/}

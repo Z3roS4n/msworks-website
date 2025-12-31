@@ -1,5 +1,6 @@
 import { MailIcon, MapPinIcon, MessageCircle, PhoneIcon } from "lucide-react";
 import Link from "next/link";
+import { Button } from "../ui/button";
 
 const Contact = () => (
   <div id="contact" className="min-h-screen flex items-center justify-center pt-12 md:pt-16 pb-16">
@@ -36,9 +37,11 @@ const Contact = () => (
           <p className="mt-2.5 mb-4 text-muted-foreground">
             Chatta con noi per una risposta rapida.
           </p>
-          <Link className="font-medium" href="https://wa.me/+393758509144" target="_blank">
-            Inizia una nuova chat
-          </Link>
+          <Button className="rounded-full" asChild>
+            <Link href="https://wa.me/+393758509144" target="_blank" className="w-full justify-center">
+              Inizia una chat con noi
+            </Link>
+          </Button>
         </div>
         <div className="border border-dashed w-full lg:w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
