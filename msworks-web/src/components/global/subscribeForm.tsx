@@ -30,7 +30,7 @@ export const SubscribeForm = () => {
   return (
     <>
       <h6 className="font-medium">Tieniti aggiornato</h6>
-      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row items-center gap-2">
+      <form onSubmit={handleSubmit} className="flex flex-col md:flex-row items-center gap-2">
         <Input
           className="rounded-full"
           type="email"
@@ -39,7 +39,7 @@ export const SubscribeForm = () => {
           onChange={(e) => setForm({ ...form, email: e.target.value })}
           required
         />
-        <Button className="rounded-full" type="submit" disabled={!accepted}>
+        <Button className="rounded-full not-md:w-full" type="submit" disabled={!accepted}>
           Iscriviti
         </Button>
       </form>

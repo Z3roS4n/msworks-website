@@ -55,19 +55,22 @@ const Footer = () => {
             </div>
 
             {/* Subscribe Newsletter */}
-            <div className="max-w-xs w-full flex flex-col gap-1">
+            <div className="md:max-w-xs w-full flex flex-col gap-1">
               <SubscribeForm></SubscribeForm>
             </div>
           </div>
           <Separator />
           <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
+            <span>
+              P.IVA 07344720821
+            </span>
             {/* Copyright */}
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
               <Link href="https://msworks.it" target="_blank">
                 M&apos;s Works
               </Link>
-              . All rights reserved.
+              . Tutti i diritti sono riservati.
             </span>
 
             <div className="flex items-center gap-5 text-muted-foreground">
