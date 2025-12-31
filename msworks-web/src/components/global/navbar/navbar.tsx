@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { NavigationSheet } from "@/components/global/navbar/navigation-sheet";
 import { Logo } from "@/components/global/logo"; 
 import { NavMenu } from "@/components/global/navbar/nav-menu";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -21,7 +22,7 @@ const Navbar = () => {
             Sign In
           </Button>
           */}
-          <Button className="rounded-full">Iniziamo!</Button>
+          <Button className="rounded-full" asChild><Link href="/#contact">Iniziamo!</Link></Button>
 
           {/* Mobile Menu */}
           <div className="md:hidden">

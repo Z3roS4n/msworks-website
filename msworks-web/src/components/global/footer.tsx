@@ -11,23 +11,21 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "./logo";
+import { subscribeNewsletter } from "@/app/actions/subscribeNewsletter";
+import { SubscribeForm } from "./subscribeForm";
 
 const footerLinks = [
   {
     title: "Features",
-    href: "#",
+    href: "/#features",
   },
   {
     title: "Contact",
-    href: "#",
-  },
-  {    
-    title: "Help",
-    href: "#",
+    href: "/#contact",
   },
   {
-    title: "Privacy",
-    href: "#",
+    title: "Privacy Policy",
+    href: "/privacy-policy",
   },
 ];
 
@@ -56,14 +54,10 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Subscribe Newsletter
-            <div className="max-w-xs w-full">
-              <h6 className="font-medium">Stay up to date</h6>
-              <form className="mt-6 flex items-center gap-2">
-                <Input className="rounded-full" type="email" placeholder="Enter your email" />
-                <Button className="rounded-full">Subscribe</Button>
-              </form>
-            </div> */}
+            {/* Subscribe Newsletter */}
+            <div className="max-w-xs w-full flex flex-col gap-1">
+              <SubscribeForm></SubscribeForm>
+            </div>
           </div>
           <Separator />
           <div className="py-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-x-2 gap-y-5 px-6 xl:px-0">
