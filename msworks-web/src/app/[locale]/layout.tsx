@@ -17,21 +17,27 @@ const siteUrl = 'https://www.msworks.it';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "M's Works | Web Agency Palermo - Sviluppo Siti & Graphic Design",
-    template: "%s | M's Works Palermo"
+    default: "M's Works | Sviluppo Siti Web & Web App Custom a Palermo",
+    template: "%s | M's Works - Soluzioni Digitali"
   },
-  description: "Diamo vita al tuo progetto digitale a Palermo. Specializzati in Sviluppo Web Next.js, Graphic Design, SEO e Ads. Team locale, qualità globale. Contattaci!",
+  description: "Dalla visibilità locale all'automazione aziendale. Realizziamo Siti Web per PMI e Web App complesse (Next.js) per aziende strutturate. Il tuo partner tecnologico a Palermo e in Italia.",
   
-  // Le keywords sono meno rilevanti per Google oggi, ma utili per altri motori
+  // Keyword strategiche: Mix Locale (Palermo) + Tecnico (Software/App)
   keywords: [
+    // Target 1: Locale & PMI
     "Web Agency Palermo",
-    "Sviluppo siti web Palermo",
-    "Realizzazione siti internet Sicilia",
-    "Graphic Design Palermo",
-    "Consulenza SEO Palermo",
-    "Next.js Developer Italia",
-    "Gestione Ads Palermo",
-    "GDPR Compliance siti web",
+    "Realizzazione siti web Palermo",
+    "Agenzia SEO Sicilia",
+    "Gestione Ads Meta Google",
+    
+    // Target 2: Aziende & Tech
+    "Sviluppo Web App Custom",
+    "Software House Italia",
+    "Next.js Developer",
+    "Digitalizzazione processi aziendali",
+    "Sviluppo Gestionali Web",
+    
+    // Brand
     "Antonio Murabito",
     "M's Works"
   ],
@@ -42,18 +48,18 @@ export const metadata: Metadata = {
   
   // Configurazione per i Social Media (Open Graph)
   openGraph: {
-    title: "M's Works | Sviluppo Web e Design a Palermo",
-    description: "Nessun compromesso tra forma e funzione. Siamo il tuo partner digitale a Palermo per siti web moderni e brand identity memorabili.",
+    title: "M's Works | Siti Web Performanti & Software Custom",
+    description: "Sviluppiamo ecosistemi digitali: siti che portano clienti alle PMI e Web App scalabili per le aziende. Scopri come uniamo design e ingegneria.",
     url: siteUrl,
     siteName: "M's Works",
     locale: 'it_IT',
     type: 'website',
     images: [
       {
-        url: '/og-image.jpg', // Assicurati di creare questa immagine (1200x630px)
+        url: '/og-image.jpg', // Assicurati di avere un'immagine aggiornata
         width: 1200,
         height: 630,
-        alt: "M's Works Team Palermo - Web Development",
+        alt: "M's Works - Sviluppo Web e Software",
       },
     ],
   },
@@ -61,9 +67,9 @@ export const metadata: Metadata = {
   // Configurazione per Twitter/X
   twitter: {
     card: 'summary_large_image',
-    title: "M's Works | Web Agency Palermo",
-    description: "Sviluppo Web Next.js e Graphic Design nel cuore di Palermo. Trasformiamo la tua idea in un capolavoro digitale.",
-    images: ['/og-image.jpg'], // Stessa immagine dell'Open Graph
+    title: "M's Works | Sviluppo Web & Software Solutions",
+    description: "Siti web veloci per crescere e Web App complesse per scalare. Il tuo partner tecnico a Palermo.",
+    images: ['/og-image.jpg'],
   },
 
   // Importante per la SEO locale e l'indicizzazione
@@ -96,9 +102,9 @@ export default async function LocaleLayout({children, params}: Props) {
 
     const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService", // o "LocalBusiness"
+    "@type": "ProfessionalService", // Copre sia Agency che Consulenza Tecnica
     "name": "M's Works",
-    "image": "https://www.msworks.it/brand-msworks.png", // Metti il link al tuo logo
+    "image": "https://www.msworks.it/brand-msworks.png", 
     "@id": "https://www.msworks.it",
     "url": "https://www.msworks.it",
     "telephone": "+393758509144",
@@ -112,7 +118,7 @@ export default async function LocaleLayout({children, params}: Props) {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 38.1157, // Coordinate generiche di Palermo (meglio se metti quelle precise dell'ufficio se c'è)
+      "latitude": 38.1157, 
       "longitude": 13.3615
     },
     "openingHoursSpecification": {
@@ -129,8 +135,10 @@ export default async function LocaleLayout({children, params}: Props) {
     },
     "founder": {
       "@type": "Person",
-      "name": "Antonio Murabito"
+      "name": "Antonio Murabito",
+      "jobTitle": "Lead Full Stack Developer" // Più autorevole di "Owner"
     },
+    // Qui dichiariamo che operi sia a Palermo che in tutta Italia
     "areaServed": [
       {
         "@type": "City",
@@ -139,10 +147,42 @@ export default async function LocaleLayout({children, params}: Props) {
       {
         "@type": "AdministrativeArea",
         "name": "Sicilia"
+      },
+      {
+        "@type": "Country",
+        "name": "Italia" // Fondamentale per il Target 2 (Software)
       }
     ],
+    // Dichiariamo esplicitamente i servizi per Google (Schema.org)
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Digitali",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sviluppo Siti Web"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sviluppo Web App Custom (SaaS & Gestionali)"
+            }
+          },
+          {
+             "@type": "Offer",
+             "itemOffered": {
+               "@type": "Service",
+               "name": "Consulenza SEO & Ads"
+             }
+          }
+        ]
+    },
     "sameAs": [
-      "https://www.instagram.com/msworks.it", // Aggiungi i vostri social
+      "https://www.instagram.com/msworks.it",
       "https://www.linkedin.com/in/z3ros4n"
     ]
   };

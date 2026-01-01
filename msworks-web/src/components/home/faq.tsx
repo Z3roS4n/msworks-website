@@ -9,39 +9,39 @@ import {
 
 const faq = [
   {
-    icon: Undo2,
-    question: "Qual è la vostra politica di reso?",
-    answer: "I servizi digitali non sono rimborsabili una volta consegnati. Tuttavia, se non sei soddisfatto del risultato finale, contatta il nostro team di supporto entro 14 giorni per discutere le opzioni disponibili.",
+    icon: Undo2, // Ho mantenuto l'icona, ma cambiato il concetto da "Reso" a "Revisioni"
+    question: "Cosa succede se non sono soddisfatto della bozza iniziale?",
+    answer: "Il rischio è zero perché lavoriamo per step. Non andiamo in sviluppo finché non hai approvato il design. Procediamo per iterazioni: ti mostriamo le bozze, raccogliamo i feedback e perfezioniamo finché il risultato non rispecchia esattamente la tua visione.",
   },
   {
     icon: Route,
-    question: "Che tempo ci vuole per la consegna del progetto?",
+    question: "Quanto tempo serve per andare online?",
     answer:
-      "Il tempo di consegna del progetto varia in base alla complessità e alle specifiche richieste. Ti forniremo una stima dettagliata durante la fase di preventivo.",
+      "Dipende dall'obiettivo. Un sito vetrina professionale per una PMI è pronto in media in 2-3 settimane. Per Web App complesse o Software gestionali, le tempistiche variano (4-12+ settimane) e vengono definite in una roadmap chiara durante la fase di analisi.",
   },
   {
     icon: Network,
-    question: "Che tecnologie utilizzate per lo sviluppo web?",
+    question: "Il software sarà scalabile quando la mia azienda crescerà?",
     answer:
-      "Utilizziamo una vasta gamma di tecnologie moderne come React, Next.js, Node.js, e altre per garantire soluzioni web performanti e scalabili.",
+      "Assolutamente sì. Non usiamo 'pacchetti chiusi'. Sviluppiamo con tecnologie moderne (Next.js, Node, Cloud Architecture) pensate per scalare da 100 a 1 milione di utenti senza dover riscrivere il codice da zero.",
   },
   {
     icon: BadgeDollarSign,
-    question: "Quali sono le modalità di pagamento?",
+    question: "Come funzionano i pagamenti?",
     answer:
-      "Accettiamo solamente pagamenti tramite bonifico bancario, PayPal e carte di credito. I dettagli del pagamento saranno forniti nella fattura.",
+      "Lavoriamo con una struttura trasparente a milestone (obiettivi). Solitamente richiediamo un acconto all'avvio e il saldo alla consegna (o tranche intermedie per progetti grossi). Accettiamo Bonifico Bancario, PayPal e Carte di Credito.",
   },
   {
     icon: ShieldCheck,
-    question: "Come proteggete i dati dei clienti?",
+    question: "La sicurezza e il codice saranno di mia proprietà?",
     answer:
-      "Adottiamo rigorose misure di sicurezza per proteggere i dati dei nostri clienti, inclusa la crittografia, l'accesso limitato e la conformità alle normative sulla privacy.",
+      "Sì. A fine progetto e saldo avvenuto, la proprietà intellettuale del codice è tua al 100%. Inoltre, adottiamo approcci 'Security by Design' e conformità GDPR nativa per proteggere i dati dei tuoi utenti e il tuo business.",
   },
   {
     icon: UserRoundCheck,
-    question: "Dove posso ottenere assistenza per ulteriori domande?",
+    question: "Offrite assistenza dopo la messa online?",
     answer:
-      "Contattaci via email all'indirizzo business@murabito.eu o chiamaci al numero +39 375 850 9144 per assistenza su qualsiasi richiesta (anche su WhatsApp).",
+      "Non ti abbandoniamo. Dopo il lancio offriamo un periodo di garanzia sui bug e proponiamo pacchetti di manutenzione annuale per aggiornamenti, sicurezza e nuove funzionalità. Siamo il tuo partner tecnologico, non solo fornitori.",
   },
 ];
 
