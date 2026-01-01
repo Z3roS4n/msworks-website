@@ -22,7 +22,7 @@ const Navbar = () => {
             Sign In
           </Button>
           */}
-          <Button className="rounded-full" asChild><Link href="/#contact">Iniziamo!</Link></Button>
+          <Button className="rounded-full" asChild><a href="#contact">Iniziamo!</a></Button>
 
           {/* Mobile Menu */}
           <div className="md:hidden z-120">
