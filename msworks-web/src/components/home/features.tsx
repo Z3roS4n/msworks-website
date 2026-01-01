@@ -71,9 +71,9 @@ const Features = () => {
                 </h4>
                 <p className="text-muted-foreground">{feature.details}</p>
                 <Button asChild size="lg" className="mt-6 rounded-full gap-3">
-                  <Link href={feature.tutorialLink}>
+                  <a href={feature.tutorialLink}>
                     Scopri di più <ArrowRight />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
