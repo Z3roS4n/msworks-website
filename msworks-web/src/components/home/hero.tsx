@@ -25,15 +25,15 @@ export default function Hero() {
           Da Palermo, portiamo le PMI locali ad avere più clienti e le Aziende italiane ad avere processi automatizzati.
         </p>
         <div className="mt-10 flex sm:flex-row flex-col justify-center gap-4">
-            <Button size="lg" className="rounded-full text-base" asChild>
-              <a href="#contact"><ChartNoAxesColumnIncreasing className="h-5! w-5!" />Aumenta le tue vendite</a>
-            </Button>
+          <Button size="lg" className="rounded-full text-base" asChild>
+            <a href="#contact" className="flex flex-row items-center gap-2"><ChartNoAxesColumnIncreasing className="h-5! w-5!" />Aumenta le tue vendite</a>
+          </Button>
           <Button
             variant="outline"
             size="lg"
             className="rounded-full text-base shadow-none"
           >
-            <a href="#contact"><Binary className="h-5! w-5!" /> Ho un processo da digitalizzare</a>
+            <a href="#contact" className="flex flex-row items-center gap-2"><Binary className="h-5! w-5!" /> Ho un processo da digitalizzare</a>
           </Button>
         </div>
       </div>
