@@ -9,9 +9,14 @@ const CTA = () => {
       <p className="text-lg md:text-xl text-muted/70 mb-8">
         Contattaci oggi per discutere del tuo progetto e scoprire come possiamo aiutarti a realizzare la tua visione.
       </p>
-      <Button size="lg" variant={"secondary"} className="rounded-full">
-        Contattaci adesso
-      </Button>
+      <div className="flex flex-col sm:flex-row max-w-3xl justify-center gap-4 mx-auto">
+        <Button size="lg" variant={"secondary"} className="rounded-full">
+          Contattaci adesso
+        </Button>
+        <Button size="lg" variant={"outline"} className="rounded-full">
+          Sentiamoci su WhatsApp
+        </Button>
+      </div>
     </section>
   );
 }

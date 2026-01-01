@@ -6,38 +6,36 @@ import Image from "next/image";
 const features = [
   {
     category: "Web Development",
-    title: "Siti web moderni e reattivi",
-    details: "Costruisci siti web moderni e reattivi che catturano l'attenzione del tuo pubblico. Utilizziamo le ultime tecnologie per garantire prestazioni ottimali e un'esperienza utente eccezionale.",
+    title: "Siti Web Performanti & Web App Custom",
+    details: "Non semplici pagine, ma strumenti di business. Realizziamo siti web ultra-veloci per la visibilità locale e Web App complesse (React, Next.js) per aziende che devono gestire dati, utenti e processi. Codice pulito, scalabile e sicuro.",
     tutorialLink: "#contact",
     image: "/feature-1.png",
   },
   {
     category: "Graphic Design",
-    title: "Design visivi sorprendenti",
-    details: "Crea design grafici accattivanti e professionali che comunicano efficacemente il tuo messaggio. Utilizziamo strumenti avanzati per garantire risultati di alta qualità.",
+    title: "Brand Identity & UI Design",
+    details: "L'estetica è la prima forma di fiducia. Progettiamo interfacce utente (UI) intuitive per i tuoi software e identità visive forti per il tuo brand. Design strategico che comunica professionalità al primo sguardo.",
     tutorialLink: "#contact",
     image: "/feature-2.png",
   },
   {
     category: "Ads Management",
-    title: "Ottimizza le tue campagne pubblicitarie",
-    details:
-      "Massimizza il rendimento delle tue campagne pubblicitarie con strategie di gestione degli annunci mirate. Analizziamo i dati per ottimizzare le performance e aumentare il ROI.",
+    title: "Campagne Pubblicitarie a Performance",
+    details: "Smetti di sperare nel passaparola. Gestiamo campagne su Meta e Google focalizzate esclusivamente sul ROI. Portiamo lead qualificati alle attività locali e traffico profilato agli e-commerce, monitorando ogni conversione.",
     tutorialLink: "#contact",
     image: "/feature-3.png",
   },
   {
     category: "GDPR Compliance",
-    title: "Proteggi la privacy dei tuoi utenti",
-    details:
-      "Proteggi i dati dei tuoi utenti e rispetta le normative GDPR. Implementa le migliori pratiche per la gestione dei dati e la privacy per costruire fiducia con il tuo pubblico.",
+    title: "Sicurezza Dati & Compliance Legale",
+    details: "La protezione dei dati è un asset aziendale. Blindiamo i tuoi progetti digitali integrando sicurezza informatica e conformità GDPR fin dalla prima riga di codice. Affidabilità totale per te e i tuoi utenti.",
     tutorialLink: "#contact",
     image: "/feature-5.png",
   },
   {
     category: "SEO/GEO Optimization",
-    title: "Migliora il posizionamento sui motori di ricerca",
-    details: "Migliora la visibilità del tuo sito web sui motori di ricerca con tecniche SEO e GEO avanzate. Ottimizza i contenuti e la struttura del sito per attirare più traffico organico.",
+    title: "Posizionamento Locale e Nazionale",
+    details: "Fatti trovare da chi ti sta già cercando. Domina le ricerche locali a Palermo con la GEO-localizzazione avanzata o scala le classifiche nazionali con una SEO tecnica impeccabile. Più traffico organico, meno costi pubblicitari.",
     tutorialLink: "#contact",
     image: "/feature-6.png",
   },

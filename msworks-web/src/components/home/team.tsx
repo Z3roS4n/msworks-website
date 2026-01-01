@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: "Antonio Murabito",
     title: "Founder & Web Developer",
-    bio: "Antonio è il fondatore e CEO, Lead Developer di M's Works. Fiero palermitano, perito tecnico e studente di Ingegneria con una forte passione per il Web Development e una visione innovativa, Antonio guida il team verso il successo, assicurando che ogni progetto rifletta i più alti standard di qualità e creatività.",
+    bio: "Founder & Lead Developer. Unisco l'approccio ingegneristico alla creatività siciliana. Il mio obiettivo non è scrivere codice, ma risolvere problemi di business. Che si tratti di portare visibilità a un'eccellenza locale o di strutturare l'architettura software di un'azienda in crescita, il mio approccio è lo stesso: solidità tecnica e focus sul risultato.",
     imageUrl:
       "/antonio.png",
     socials: [
@@ -29,12 +29,12 @@ const teamMembers = [
   {
     name: "Gabriele Iannazzo",
     title: "Developer & Security Expert",
-    bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Anche lui di Palermo, attualmente studente di Informatica con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
+    bio: "Gabriele è un esperto sviluppatore con una passione per la sicurezza informatica. Anche lui di Palermo, perito Tecnico in Informatica e Telecomunicazioni con anni di esperienza nel settore, Gabriele si dedica a creare soluzioni innovative e sicure per i nostri clienti.",
     imageUrl:
       "/ianni.png",
     socials: [
       {
-        url: "https://instagram.com/i4nni",
+        url: "https://instagram.com/i4nni114",
         icon: <InstagramIcon></InstagramIcon>
       },
       {
@@ -46,7 +46,7 @@ const teamMembers = [
   {
     name: "Cesare Tinaglia",
     title: "Communication Expert",
-    bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. Anche lui di Palermo, attualmente studente di Comunicazione, la sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
+    bio: "Cesare è un esperto di comunicazione con una vasta esperienza nel settore. Anche lui di Palermo, esperto in Comunicazione e Marketing, è la nostra voce, la sua capacità di creare strategie di comunicazione efficaci aiuta a trasmettere il messaggio del nostro brand in modo chiaro e coinvolgente.",
     imageUrl:
       "/cesare.png",
     socials: [
