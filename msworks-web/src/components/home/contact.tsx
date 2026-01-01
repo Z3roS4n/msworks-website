@@ -22,12 +22,12 @@ const Contact = () => (
           <p className="mt-2.5 mb-4 text-muted-foreground">
             Rispondiamo entro 24 ore.
           </p>
-          <Link
+          <a
             className="font-medium"
             href="mailto:business@murabito.eu"
           >
             business@murabito.eu
-          </Link>
+          </a>
         </div>
         <div className="border border-dashed w-full lg:w-1/4 bg-muted/40 p-6 pb-8 rounded-xl">
           <div className="h-12 w-12 flex items-center justify-center bg-foreground/5 dark:bg-foreground/8 text-foreground rounded-full">
@@ -51,9 +51,9 @@ const Contact = () => (
           <p className="mt-2.5 mb-4 text-muted-foreground">
             Dal lunedì al venerdì, 10:00 - 19:00.
           </p>
-          <Link className="font-medium" href="tel:+393758509144">
+          <a className="font-medium" href="tel:+393758509144">
             +39 375 850 9144
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -26,14 +26,14 @@ export default function Hero() {
         </p>
         <div className="mt-10 flex sm:flex-row flex-col justify-center gap-4">
             <Button size="lg" className="rounded-full text-base" asChild>
-              <Link href="#contact"><ChartNoAxesColumnIncreasing className="h-5! w-5!" />Aumenta le tue vendite</Link>
+              <a href="#contact"><ChartNoAxesColumnIncreasing className="h-5! w-5!" />Aumenta le tue vendite</a>
             </Button>
           <Button
             variant="outline"
             size="lg"
             className="rounded-full text-base shadow-none"
           >
-            <Binary className="h-5! w-5!" /> Ho un processo da digitalizzare
+            <a href="#contact"><Binary className="h-5! w-5!" /> Ho un processo da digitalizzare</a>
           </Button>
         </div>
       </div>
