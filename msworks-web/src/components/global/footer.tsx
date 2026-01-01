@@ -43,12 +43,12 @@ const Footer = () => {
               <ul className="mt-6 flex items-center gap-4 flex-wrap">
                 {footerLinks.map(({ title, href }) => (
                   <li key={title}>
-                    <Link
+                    <a
                       href={href}
                       className="text-muted-foreground hover:text-foreground"
                     >
                       {title}
-                    </Link>
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -67,19 +67,19 @@ const Footer = () => {
             {/* Copyright */}
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
-              <Link href="https://msworks.it" target="_blank">
+              <a href="https://msworks.it" target="_blank" rel="noopener noreferrer">
                 M&apos;s Works
-              </Link>
+              </a>
               . Tutti i diritti sono riservati.
             </span>
 
             <div className="flex items-center gap-5 text-muted-foreground">
-              <Link href="#" target="_blank">
+              <a href="https://github.com/msworks-it">
                 <GithubIcon className="h-5 w-5" />
-              </Link>
-              <Link href="#" target="_blank">
+              </a>
+              <a href="https://instagram.com/msworks.it">
                 <InstagramIcon className="h-5 w-5" />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
