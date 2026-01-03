@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "./logo";
-import { subscribeNewsletter } from "@/app/actions/subscribeNewsletter";
+import { subscribeNewsletter } from "@/app/actions/subscribe-newsletter";
 import { SubscribeForm } from "./subscribeForm";
 
 const footerLinks = [
