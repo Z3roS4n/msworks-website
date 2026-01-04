@@ -48,7 +48,7 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-2">
           <Label>Nome e Cognome</Label>
           <Input className="rounded-full" value={name} onChange={(e) => setName(e.target.value)}></Input>
-          <Label>Il tuo miglior indirizzo Email</Label>
+          <Label>Il tuo indirizzo Email</Label>
           <Input className="rounded-full" value={email} onChange={(e) => setEmail(e.target.value)}></Input>
           <Label>Messaggio</Label>
           <Input className="rounded-2xl h-32" value={message} onChange={(e) => setMessage(e.target.value)}></Input>
