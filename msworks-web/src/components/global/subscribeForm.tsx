@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { subscribeNewsletter } from "@/app/actions/subscribeNewsletter";
+import { subscribeNewsletter } from "@/app/actions/subscribe-newsletter";
 import { NewsletterSubscription, NewsletterSubscriptionSchema } from "@/lib/zod/newsletter";
 import Link from "next/link";
+import { BadgeCheck } from "lucide-react";
+import { Toggle } from "../ui/toggle";
 
 export const SubscribeForm = () => {
   const [form, setForm] = useState<NewsletterSubscription>({ email: "" });
@@ -43,21 +45,19 @@ export const SubscribeForm = () => {
           Iscriviti
         </Button>
       </form>
-      <div className="mt-2 flex items-center">
-        <Input
-          type="checkbox"
-          id="privacyPolicy"
-          checked={accepted}
-          onChange={(e) => setAccepted(e.target.checked)}
-          className="mr-2 w-10"
-        />
-        <label htmlFor="privacyPolicy" className="text-sm">
-          Acconsento al trattamento dei miei dati personali in conformità con la{" "}
-          <Link href="/privacy-policy" className="underline">
-            Privacy Policy
-          </Link>
-          .
-        </label>
+      <div className="flex flex-row mt-4 gap-2 items-center justify-center">
+        <Toggle
+          aria-label="Toggle check"
+          size="sm"
+          pressed={accepted}
+          onClick={() => setAccepted(!accepted)}
+          variant="outline"
+          
+          className="data-[state=on]:bg-transparent data-[state=on]:*:[svg]:fill-blue-500 data-[state=on]:*:[svg]:stroke-blue-500"
+        >
+          <BadgeCheck />
+        </Toggle> 
+        <p>Ho letto e accetto la <Link href="/privacy-policy" className="underline">politica sulla privacy</Link></p>
       </div>
       {errors && <p className="text-sm text-red-500 mt-2">{errors}</p>}
     </>

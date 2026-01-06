@@ -1,4 +1,5 @@
 import Contact from '@/components/home/contact';
+import LetsConnect from '@/components/home/contact/lets-connect';
 import CTA from '@/components/home/cta';
 import FAQ from '@/components/home/faq';
 import Features from '@/components/home/features';
@@ -14,6 +15,7 @@ export default function LocalePage() {
       <Testimonials></Testimonials>
       <Team></Team>
       <Contact></Contact>
+      <LetsConnect></LetsConnect>
       <FAQ></FAQ>
     </main>
   );

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 
 const Contact = () => (
-  <div id="contact" className="min-h-screen flex items-center justify-center pt-12 md:pt-16 pb-16">
+  <div id="contact" className="min-h-screen flex items-center justify-center pt-12 md:pt-16 pb-2">
     <div className="w-full max-w-(--breakpoint-xl) mx-auto px-6 xl:px-0">
       <div className="text-center max-w-2xl mx-auto">
         <h2 className="mt-3 text-4xl sm:text-5xl font-semibold tracking-tighter">

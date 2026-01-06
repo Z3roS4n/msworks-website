@@ -8,7 +8,7 @@ export default async function PrivacyPolicyPage() {
             Privacy Policy
           </h1>
           <p className="text-lg text-foreground/60">
-            Ultimo aggiornamento: 31 Dicembre 2025
+            Ultimo aggiornamento: 3 Gennaio 2026
           </p>
         </div>
 
@@ -56,7 +56,13 @@ export default async function PrivacyPolicyPage() {
                   A. Dati forniti volontariamente dall&apos;utente
                 </h3>
                 <p className="text-foreground/80 leading-relaxed">
-                  L&apos;invio facoltativo, esplicito e volontario di posta elettronica agli indirizzi indicati su questo sito o la compilazione di moduli per l&apos;iscrizione alla Newsletter comporta la successiva acquisizione dell&apos;indirizzo email del mittente, necessario per rispondere alle richieste o erogare il servizio di newsletter, nonch&eacute; degli eventuali altri dati personali inseriti nella missiva.
+                  L&apos;invio facoltativo, esplicito e volontario di posta elettronica agli indirizzi indicati su questo sito o la compilazione di moduli comporta la successiva acquisizione dei dati personali forniti dall&apos;utente.
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-2">
+                  <strong>Form di Contatto:</strong> La compilazione del form di contatto presente sul sito comporta la raccolta dei seguenti dati: nome e cognome, indirizzo email e messaggio. Questi dati sono necessari per poter rispondere alle richieste di contatto e gestire le comunicazioni con l&apos;utente.
+                </p>
+                <p className="text-foreground/80 leading-relaxed mt-2">
+                  <strong>Newsletter:</strong> La compilazione del modulo per l&apos;iscrizione alla Newsletter comporta l&apos;acquisizione dell&apos;indirizzo email del mittente, necessario per erogare il servizio di newsletter.
                 </p>
               </div>
 
@@ -94,6 +100,9 @@ export default async function PrivacyPolicyPage() {
             <ul className="space-y-3 pl-6 text-foreground/80 leading-relaxed">
               <li>
                 <strong>Funzionamento del sito:</strong> Per garantire la corretta navigazione e fruizione dei servizi (Base giuridica: Esecuzione di un contratto o misure precontrattuali).
+              </li>
+              <li>
+                <strong>Form di Contatto:</strong> Per rispondere alle richieste di contatto inviate tramite il form presente sul sito e gestire le comunicazioni con gli utenti, previo esplicito consenso dell&apos;utente alla privacy policy (Base giuridica: Consenso e Legittimo interesse del Titolare).
               </li>
               <li>
                 <strong>Invio Newsletter:</strong> Per inviare periodicamente email informative, aggiornamenti o materiale promozionale relativo a M&apos;s Works, previo esplicito consenso dell&apos;utente (Base giuridica: Consenso).
@@ -147,6 +156,9 @@ export default async function PrivacyPolicyPage() {
               I dati sono trattati e conservati per il tempo richiesto dalle finalit&agrave; per le quali sono stati raccolti.
             </p>
             <ul className="space-y-2 pl-6 text-foreground/80 leading-relaxed">
+              <li>
+                <strong>Dati del Form di Contatto:</strong> Conservati per il tempo necessario a gestire la richiesta e per eventuali obblighi di legge (generalmente non oltre 2 anni dalla ricezione).
+              </li>
               <li>
                 <strong>Dati per la Newsletter:</strong> Conservati fino alla revoca del consenso (disiscrizione) da parte dell&apos;utente.
               </li>
