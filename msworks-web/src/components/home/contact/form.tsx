@@ -4,6 +4,7 @@ import { sendContactForm } from "@/app/actions/send-contact-form";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 import { Toggle } from "@/components/ui/toggle";
 import { ContactFormSchema } from "@/lib/zod/contact-form";
 import { BadgeCheck } from "lucide-react";
@@ -51,7 +52,7 @@ const ContactForm = () => {
           <Label>Il tuo indirizzo Email</Label>
           <Input className="rounded-full" value={email} onChange={(e) => setEmail(e.target.value)}></Input>
           <Label>Messaggio</Label>
-          <Input className="rounded-2xl h-32" value={message} onChange={(e) => setMessage(e.target.value)}></Input>
+          <Textarea className="rounded-2xl resize-none h-32" value={message} onChange={(e) => setMessage(e.target.value)}></Textarea>
           <div className="flex flex-row mt-4 gap-2 items-center justify-center">
             <Toggle
               aria-label="Toggle check"
