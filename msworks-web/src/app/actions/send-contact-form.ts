@@ -1,6 +1,7 @@
 "use server";
 
 import { prisma } from "@/lib/prisma";
+import "dotenv/config";
 import { ContactFormSchema } from "@/lib/zod/contact-form";
 
 export async function sendContactForm(formData: FormData) {
@@ -20,5 +21,11 @@ export async function sendContactForm(formData: FormData) {
       message,
     },
   });
+
+  // SYNC TO NOTION
+  const syncUrl = process.env.NOTION_CONTACT_FORM_WEBHOOK_URL;
+  if(syncUrl)
+    fetch(syncUrl as string);
+
   return { success: true };
 }
